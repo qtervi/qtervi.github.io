@@ -9,8 +9,7 @@ body {
   overflow: hidden;
   color: #444;
   font-family: "Noto Sans";
-  background: -webkit-radial-gradient(center ellipse, white 50%, #c8dad2 100%);
-  background: radial-gradient(ellipse at center, white 50%, #c8dad2 100%);
+  background: #000;
 }
 
 a {
