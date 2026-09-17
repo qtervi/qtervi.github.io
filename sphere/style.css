@@ -1,0 +1,95 @@
+@import url("https://fonts.googleapis.com/css?family=Noto+Sans:400,700");
+
+html {
+  height: 100%;
+}
+
+body {
+  min-height: 100%;
+  overflow: hidden;
+  color: #444;
+  font-family: "Noto Sans";
+  background: -webkit-radial-gradient(center ellipse, white 50%, #c8dad2 100%);
+  background: radial-gradient(ellipse at center, white 50%, #c8dad2 100%);
+}
+
+a {
+  color: #444;
+  text-decoration: none;
+}
+
+::-moz-selection {
+  color: #fff;
+  background: rgba(0, 0, 0, 0.5);
+}
+
+::selection {
+  color: #fff;
+  background: rgba(0, 0, 0, 0.5);
+}
+
+.p-contents-summary {
+  position: absolute;
+  top: 2%;
+  left: 2%;
+  z-index: 100;
+}
+.p-contents-summary__head {
+  margin: 0;
+  font-weight: 400;
+  letter-spacing: 2px;
+}
+.p-contents-summary__text {
+  max-width: 360px;
+  line-height: 1.75;
+  margin: 1em 0;
+  font-size: 13px;
+  font-size: 0.8125rem;
+  letter-spacing: 1px;
+}
+.p-contents-summary__link-source {
+  margin: 0;
+  font-size: 13px;
+  font-size: 0.8125rem;
+  letter-spacing: 1px;
+}
+.p-contents-summary__link-source a {
+  position: relative;
+}
+.p-contents-summary__link-source a:after {
+  content: "";
+  display: block;
+  position: absolute;
+  z-index: -1;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background-color: #444;
+}
+.p-contents-summary__link-source a {
+  -webkit-transition-duration: 0.3s;
+  transition-duration: 0.3s;
+  -webkit-transition-timing-function: cubic-bezier(0.25, 0.46, 0.45, 0.94);
+  transition-timing-function: cubic-bezier(0.25, 0.46, 0.45, 0.94);
+}
+.p-contents-summary__link-source a:after {
+  -webkit-transform: scale(0, 1);
+  -ms-transform: scale(0, 1);
+  transform: scale(0, 1);
+  -webkit-transform-origin: left center;
+  -ms-transform-origin: left center;
+  transform-origin: left center;
+  -webkit-transition-duration: 0.3s;
+  transition-duration: 0.3s;
+  -webkit-transition-timing-function: cubic-bezier(0.25, 0.46, 0.45, 0.94);
+  transition-timing-function: cubic-bezier(0.25, 0.46, 0.45, 0.94);
+}
+.p-contents-summary__link-source a:hover {
+  color: #fff;
+}
+.p-contents-summary__link-source a:hover:after {
+  -webkit-transform: scale(1, 1);
+  -ms-transform: scale(1, 1);
+  transform: scale(1, 1);
+}
